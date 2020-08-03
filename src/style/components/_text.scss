@@ -1,0 +1,29 @@
+.boldText{
+    font-weight: bold;
+}
+.largeText{
+    font-size: $font-l;
+    text-decoration: none;
+    border: none;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        font-size: $font-m;
+    }
+}
+.xl-Text{
+    font-size: $font-xl;
+    text-decoration: none;
+    border: none;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        font-size: $font-m;
+     }
+}
+.linkText{
+    @extend .largeText;
+    text-decoration: underline;
+}
+.whiteText{
+    color: rgba(white, 0.5);
+}
+.whiteText:hover{
+    color: rgba(white, 0.9);
+}

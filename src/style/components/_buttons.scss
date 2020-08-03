@@ -1,0 +1,131 @@
+.whiteTranseptButton {
+  background-color: rgba(grey, 0.5);
+  color: black;
+  margin: 0;
+  border: none;
+  width: $xl-input;
+  height: $m-input-h;
+  border-radius: $radius;
+  padding-right: $s-xl;
+  padding-left: $s-s;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-xl;
+  font-weight: bold;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    font-size: $font-l;
+    width: $m-input;
+    height: $s-input-h;
+    padding-right: $s-m;
+  }
+}
+.whiteTranseptButton:hover {
+  background-color: rgba(grey, 0.8);
+}
+.greenButton {
+  background: #5aac44;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  width: $s-input;
+  height: $m-input-h;
+  margin: 0.5rem;
+  padding: 0.1rem;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    font-size: $font-m;
+    width: $s-input;
+    height: $s-input-h;
+  }
+}
+.greenButton:hover {
+  background: #5bc040;
+}
+.exitButton {
+  background: transparent;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-size: $font-xl;
+  margin: 0.5rem;
+  padding: 0.1rem;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    font-size: $font-l;
+  }
+}
+.smallButton {
+  width: 2rem;
+  height: 2rem;
+}
+.invisibleButton {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+}
+.transeptButtonS {
+  @extend .invisibleButton;
+  color: black;
+  border-radius: $radius;
+  font-size: $font-xl;
+  font-weight: 100;
+  margin: 0;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    font-size: $font-m;
+    margin: 0.5rem;
+  }
+}
+.transeptButtonS:hover {
+  background-color: rgba(grey, 0.8);
+}
+
+.transeptButton {
+  @extend .transeptButtonS;
+  border: none;
+  width: $xl-input;
+  height: $m-input-h;
+  padding-right: $s-xl;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 100;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    width: $s-input;
+    height: $m-input-h;
+    padding-right: 0rem;
+  }
+}
+
+.transeptButton-flex {
+  @extend .transeptButtonS;
+  text-align: start;
+  text-decoration: none;
+  display: inline-block;
+  font-size: $font-l;
+}
+.transeptButton-alignCenter {
+  @extend .transeptButtonS;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+}
+.whiteTranseptButton-s {
+  @extend .whiteTranseptButton;
+  font-size: $font-xl;
+  width: max-content;
+  height: $m-input-h;
+  padding: 0;
+  margin-right: $s-s;
+  padding-right: 5px;
+  padding-left: 5px;
+  @media only screen and (max-width: $desktop-breakpoint) {
+    font-size: $font-m;
+    margin: 0.1rem;
+
+    height: $s-input-h;
+  }
+}

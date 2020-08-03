@@ -1,0 +1,43 @@
+.cardForm{
+    @extend .flexRow;
+    justify-content: space-between;
+    font-size: $font-l;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        flex-direction: column;
+
+    }
+}
+.cardForm-description{
+    @extend .flexColumn;
+    width: 80%;
+    
+    
+    margin-right: 5%;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        font-size: $font-m;
+
+    }
+}
+.cardForm-description-textArea{
+    width:100%;
+    border: none;
+    height: 20%;
+    background-color: rgba(grey, 0.6);
+}
+.cardForm-menu-options{
+    @extend .flexColumnAlignItemsStart;
+    @extend .m-t-2;
+    width: 100%;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        width: 40%;
+    }
+}
+.cardForm-menu-option{
+    @extend .transeptButtonS;
+    background-color: rgba(grey, 0.3);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    align-self: start;
+}

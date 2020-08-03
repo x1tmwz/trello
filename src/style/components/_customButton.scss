@@ -1,0 +1,36 @@
+.trelloButton-container{
+    margin: $s-s;
+}
+.trelloButton-form{
+    background-color: $light-grey;
+    font-size: $font-l;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        font-size: $font-l;
+    }
+}
+.trelloButton-form input{
+    margin: 0.5rem;
+    width: $xl-input;
+    height: $m-input-h;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        width: $m-input;
+        height: $s-input-h;
+    }
+}
+.trelloButton-form-ajustInput{
+    width: $xl-input;
+    height: auto;
+    min-height: $l-input-h;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: 1px solid black;
+    resize: none;
+    font-size: $font-xl;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        width: $s-input+2rem;
+        min-height: $m-input-h;
+        font-size: $font-l;
+    }
+}
+

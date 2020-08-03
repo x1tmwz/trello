@@ -1,0 +1,12 @@
+.width-xl {
+    width: $xl-input;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        width: $m-input;
+    }
+}
+.width-m {
+    width: $m-input + 3rem;
+    @media only screen and (max-width: $desktop-breakpoint) {
+        width: $s-input + 7rem;
+    }
+}

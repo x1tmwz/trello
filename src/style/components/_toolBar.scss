@@ -1,0 +1,18 @@
+.toolBar{
+    @extend .flexRow;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $font-xl;
+    padding: $s-s;
+    background-color: rgba(white, 0.2);
+    @media only screen and (max-width: $desktop-breakpoint) {
+        flex-direction: column;
+        justify-content: center;
+     }
+}
+.toolBar-innerContainer{
+    @extend .flexRow;
+    align-items: baseline;
+    justify-content: center;
+
+}
